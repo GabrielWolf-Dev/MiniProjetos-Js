@@ -1,0 +1,85 @@
+/* Resetando a página */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+html, body {
+    height: 100%;
+}
+
+/*-------------------------------------*/
+
+/* Centralizando os elementos */
+.center {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+body {
+    background-color: #DB4D37;
+    color: #FCEAC5;
+}
+
+main {
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+main h1 {
+    padding: 30px 0;
+    font-size: 30px;
+}
+
+.w100 {
+    width: 100%;
+    padding: 20px 2%;
+}
+
+main input[type='number'] {
+    width: 100%;
+    max-width: 330px;
+    padding: 10px 0 10px 10px;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+}
+
+main input[type='submit'] {
+
+    margin: 20px 0;
+    color: #FCEAC5;
+    background-color: #FAB937;
+    border: 0;
+    outline: 0;
+    padding: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+main input[type='submit']:hover {
+    background-color: #fab937b9;
+}
+
+main div#resultadoIMC {
+    width: 100%;
+    margin: 20px 0;
+}
+
+main div#resultadoIMC p {
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+main div#resultadoIMC span {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
