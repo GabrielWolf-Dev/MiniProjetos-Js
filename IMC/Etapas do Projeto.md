@@ -12,6 +12,6 @@
 - [x] Criar o Script;
 - [x] Chamar os elementos do HTML que vai se interar no cáculo;
 - [x] Fazer o cálculo;
-- [ ] Validação nos inputs;
+- [x] Validação nos inputs;
 - [x] Printar o resultado;
 - [x] Inserir a Classificação do IMC.
