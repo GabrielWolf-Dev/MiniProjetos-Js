@@ -5,7 +5,7 @@
 - [ ] Colocar um ícone.
 
 ### No CSS:
-- [ ] Estilização;
+- [x] Estilização;
 - [ ] Deixar responsivo.
 
 ### No Javascript:
