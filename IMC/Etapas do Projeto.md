@@ -1,12 +1,11 @@
 ## Etapas concluídas e que vamos concluir no nosso pequeno projeto:
 ### No HTML:
 - [x] Criar a estrutura básica do HTML;
-- [x] Criar elementos interáveis com o nosso script;
-- [ ] Colocar um ícone.
+- [x] Criar elementos interáveis com o nosso script.
 
 ### No CSS:
 - [x] Estilização;
-- [ ] Deixar responsivo.
+- [x] Deixar responsivo.
 
 ### No Javascript:
 - [x] Criar o Script;
