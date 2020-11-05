@@ -1,0 +1,68 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.btnPop-up {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btnPop-up input[type='submit'] {
+    font-size: 26px;
+    padding: 20px;
+    background-color: rgb(255, 38, 38);
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.box-Popup{
+    width: 100%;
+    max-width: 350px;
+    height: 280px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px 3px black;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    background-color: white;
+}
+
+.concent-box {
+    text-align: center;
+    font-size: 20px;
+    padding: 30px 2%;
+}
+
+.concent-box h2, .concent-box p, .concent-box input[type='submit'] {
+    margin: 16px 0;
+}
+
+.concent-box input[type='submit'] {
+    padding: 15px;
+    background-color: rgb(255, 38, 38);
+    color: white;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.concent-box input[type='submit']:hover, .btnPop-up input[type='submit']:hover {
+    background-color:  rgb(221, 33, 33);
+}
