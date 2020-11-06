@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+#bg-iconOpen {
+    width: 100%;
+    background-color: rgb(0, 89, 255);
+    color: white;
+    padding: 20px 2%;
+}
+
+#iconOpen {
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 15px 17px;
+    transition: 0.5s;
+}
+
+#iconOpen:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#nav-Menu {
+    width: 30%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    display: none;
+}
+
+#nav-Menu #iconClose {
+    background-color:rgb(0, 89, 255);
+    width: 100%;
+    padding: 20px 20px;
+}
+
+#nav-Menu #iconClose > i {
+    padding: 15px 17px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+#nav-Menu #iconClose > i:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#nav-Menu > nav {
+    padding: 20px 0;
+    font-size: 24px;
+}
+
+#nav-Menu nav ul {
+    list-style-type: none;
+}
+
+#nav-Menu nav ul li {
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#nav-Menu nav ul li:hover {
+    background-color: rgb(207, 207, 207);
+    color: white;
+}
+
+
+#nav-Menu nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
