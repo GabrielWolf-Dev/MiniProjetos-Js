@@ -7,9 +7,9 @@
 
 ## CSS:
 - [x] Estilização;
-- [ ] Animação.
+- [x] Animação.
 
 ## Js:
 - [x] Inserir os elementos dentro do script;
 - [x] Interação: Fechar e abrir o menu;
-- [ ] Fazer a animação ficar dinâmica;
+- [x] Fazer a animação ficar dinâmica;

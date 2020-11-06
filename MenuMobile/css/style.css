@@ -30,17 +30,18 @@ html, body {
 }
 
 #nav-Menu {
-    width: 30%;
+    width: 20%;
     height: 100vh;
     position: absolute;
     left: 0;
     top: 0;
     z-index: 999;
     display: none;
+    box-shadow: 3px 3px 15px 5px black;
 }
 
 #nav-Menu #iconClose {
-    background-color:rgb(0, 89, 255);
+    background-color:black;
     width: 100%;
     padding: 20px 20px;
 }
@@ -60,7 +61,7 @@ html, body {
 
 #nav-Menu > nav {
     padding: 20px 0;
-    font-size: 24px;
+    font-size: 26px;
 }
 
 #nav-Menu nav ul {
@@ -68,7 +69,7 @@ html, body {
 }
 
 #nav-Menu nav ul li {
-    padding: 10px 30px;
+    padding: 30px 30px;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -82,5 +83,35 @@ html, body {
 #nav-Menu nav ul li a {
     text-decoration: none;
     color: black;
+}
+
+@keyframes abrirMenu {
+
+    0% {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+    }
+
+}
+
+@keyframes fecharMenu {
+
+    0% {
+        transform: translate(0%);
+        -webkit-transform: translate(0%);
+        -ms-transform: translate(0%);
+    }
+    50% {
+        transform: translate(-100%);
+        -webkit-transform: translate(-100%);
+        -ms-transform: translate(-100%);
+    }
+
 }
 

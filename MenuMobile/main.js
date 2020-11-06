@@ -4,8 +4,14 @@ let fechar = document.getElementById('iconClose');
 
 abrir.addEventListener('click', () => {
     nav_Menu.style.display = 'block';
+    nav_Menu.style.animation = 'abrirMenu 1s 1';
 })
 
-iconClose.addEventListener('click', () => {
+let displayMenu = () => {
     nav_Menu.style.display = 'none';
+};
+
+fechar.addEventListener('click', () => {
+    nav_Menu.style.animation = 'fecharMenu 1s 1';
+    setTimeout(displayMenu, 500);
 });
