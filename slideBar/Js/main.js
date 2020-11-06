@@ -1,15 +1,28 @@
-let proximo = document.getElementById('proximo');
-let imgs = [
-    document.getElementById('img1'),
-    document.getElementById('img2'),
-    document.getElementById('img3')
-];
+let totalSlides = document.querySelectorAll('.slider-item').length;
+let slideAtual = 0;
 
-proximo.addEventListener('click', () => {
+document.querySelector('.sliderWidth').style.width = `calc(100vw * ${totalSlides})`;
 
-    imgs.reduce((valorAcumulador, array) => {
-        let teste = -100;
-        valorAcumulador += array.style.transform += `translateX(${teste}%)`, array.style.transition = '0.5s';
-    }, 0);
+function proximo() {
+    slideAtual++;
+    if(slideAtual > (totalSlides - 1)) {
+        slideAtual= 0;
+    }
+    atualizarSlide();
+}
 
-});
+function anterior() {
+    slideAtual--;
+    if(slideAtual < 0) {
+        slideAtual = totalSlides - 1;
+    }
+    atualizarSlide();
+}
+
+function atualizarSlide() {
+    let sliderW = document.querySelector('.slider-item').clientWidth;
+    let novaMargin = (slideAtual * sliderW); // Ou insira - document.body.clientWidth
+    document.querySelector('.sliderWidth').style.marginLeft = `-${novaMargin}px`;
+}
+
+setInterval(proximo, 4000);

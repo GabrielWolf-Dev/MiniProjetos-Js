@@ -25,8 +25,8 @@ html, body {
     height: 720px;
     padding: 10px 0;
     position: relative;
-    display: flex;
     overflow: hidden;
+    transition: 0.5s;
 }
 
 .arrow-right, .arrow-left {
@@ -46,15 +46,14 @@ html, body {
     right: 0;
 }
 
-div.img1 {
-    width: calc(300% / 3);
+.sliderWidth {
+    height: 100%;
+    display: flex;
+    transition: all ease 0.3s;
 }
 
-div.img2 {
-    width: calc(300% / 3);
-}
-
-div.img3 {
-    width: calc(300% / 3);
+.slider-item {
+    width: 100vw;
+    height: inherit;
 }
 
