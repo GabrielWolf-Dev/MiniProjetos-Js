@@ -1,7 +1,3 @@
-# Cronômetro
-
-![Relógio](https://cdn.pixabay.com/photo/2016/11/22/11/48/stopwatch-1849088_960_720.png);
-
 # Etapas do Projeto:
 
 ## HTML:
