@@ -20,4 +20,4 @@
 - [x] Validação nos inputs;
 - [x] Montar a lógica;
 - [x] Inserir o áudio e mensagem, após a variável "secAtual" chegar no 0;
-- [x] Para o Interval. 
+- [x] Parar o Interval. 
