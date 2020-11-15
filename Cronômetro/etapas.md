@@ -9,9 +9,9 @@
 
 ## CSS:
 
-- [] Estilização;
-- [] Responsivo;
-- [] Estilização das tags dentro do script.
+- [ ] Estilização;
+- [ ] Responsivo;
+- [ ] Estilização das tags dentro do script.
 
 ## Javascript:
 
