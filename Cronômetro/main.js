@@ -2,6 +2,7 @@ let min = document.getElementById('min');
 let sec = document.getElementById('sec');
 let btn = document.querySelector('.btn');
 let result = document.querySelector('.result');
+let contador = document.querySelector('.contador');
 
 
 btn.addEventListener('click', () => {
@@ -23,11 +24,11 @@ btn.addEventListener('click', () => {
                 }else {
                     clearInterval(interval);
                     document.querySelector('.sound').play();
-                    result.innerHTML += `<p style="color: blue; font-weight: bold;">Acabou o tempo!</p>`;
+                    result.innerHTML = `<p style="color: blue; font-weight: bold;">Acabou o tempo!</p>`;
                 }
             }
 
-            result.innerHTML += `<p style="color:red;">${minAtual}:${secAtual}</p>`;
+            contador.innerHTML = `<p style="color:red;">${minAtual}:${secAtual}</p>`;
         }, 1000);
 
     }
