@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mini Loja Virtual - HTML, CSS3 and Js">
+    <meta name="keywords" content="Mini,mini,loja,virtual,HTML CSS Js">
+    <meta name="author" content="Gabriel Wolf">
+    <title>Mini Loja Virtual</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+
+        <div class="container">
+
+            <div class="title"><h2>Loja Virtual Simples</h2></div><!--title-->
+            
+        </div><!--container-->
+
+    </header>
+
+    <main>
+
+        <div class="container">
+
+            <div class="imgs-wraper">
+
+                <div class="img-single">
+                    <img src="./img/Camisa-masculina.png" alt="Camisa Masculina">
+                    <div class="content-produto">
+                        <p>Adicionar no carrinho: </p>
+                        <input type="text" placeholder="Camisa" id="camisa_masculina">
+                        <input type="submit" value="Adicionar" onclick="addCamisa()">
+                    </div><!--content-produto-->
+                </div><!--img-single-->
+                <div class="img-single">
+                    <img src="./img/Calça-masculina.jpg" alt="Calça Masculina">
+                    <div class="content-produto">
+                        <p>Adicionar no carrinho: </p>
+                        <input type="text" placeholder="Calça" id="calça_masculina">
+                        <input type="submit" value="Adicionar" onclick="addCalca()">
+                    </div><!--content-produto-->
+                </div><!--img-single-->
+                <div class="img-single">
+                    <img src="./img/sapato-masculino.jpg" alt="Sapato Masculino">
+                    <div class="content-produto">
+                        <p>Adicionar no carrinho: </p>
+                        <input type="text" placeholder="Sapato" id="sapato_masculina">
+                        <input type="submit" value="Adicionar" onclick="addSapato()">
+                    </div><!--content-produto-->
+                </div><!--img-single-->
+
+            </div><!--imgs-wraper-->
+
+        </div><!--container-->
+
+    </main>
+
+    <section class="carrinho">
+
+        <div class="container">
+
+            <h2>Carrinho</h2>
+
+            <div class="carrinho-produtos">
+
+                <div class="produto">
+                    <p>Camisa:</p>
+                    <p id="camisaM_carrinho"></p>
+                </div><!--produto-->
+
+                <div class="produto">
+                    <p>Calça:</p>
+                    <p id="calcaM_carrinho"></p>
+                </div><!--produto-->
+
+                <div class="produto">
+                    <p>Sapato:</p>
+                    <p id="sapatoM_carrinho"></p>
+                </div><!--produto-->
+
+            </div><!--carrinho-produtos-->
+
+        </div><!--container-->
+
+    </section><!--carrinho-->
+
+    <footer>
+
+        <div class="container">
+
+            <h2>Mini Loja Virtual</h2>
+
+        </div><!--container-->
+
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>
