@@ -5,7 +5,7 @@
 - [x] Inserir o HTML interável com o script;
 - [x] Inserir o áudio;
 - [x] Linkar o script no HTML;
-- [] Inserir o css.
+- [ ] Inserir o css.
 
 ## CSS:
 
