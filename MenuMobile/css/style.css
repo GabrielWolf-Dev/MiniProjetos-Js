@@ -9,6 +9,13 @@ html, body {
     height: 100%;
 }
 
+.enable{
+    display: block;
+}
+
+.disable{
+    display: none;
+}
 
 #bg-iconOpen {
     width: 100%;
@@ -36,7 +43,6 @@ html, body {
     left: 0;
     top: 0;
     z-index: 999;
-    display: none;
     box-shadow: 3px 3px 15px 5px black;
 }
 
@@ -85,7 +91,7 @@ html, body {
     color: black;
 }
 
-@keyframes abrirMenu {
+@keyframes openAnimate {
 
     0% {
         transform: translateX(-100%);
@@ -100,7 +106,7 @@ html, body {
 
 }
 
-@keyframes fecharMenu {
+@keyframes closeAnimate {
 
     0% {
         transform: translate(0%);

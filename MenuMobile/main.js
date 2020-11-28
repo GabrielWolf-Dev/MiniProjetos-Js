@@ -1,17 +1,21 @@
-let abrir = document.getElementById('iconOpen');
-let nav_Menu = document.getElementById('nav-Menu');
-let fechar = document.getElementById('iconClose'); 
+let openMenu = document.getElementById('iconOpen');
+let nav_Menu = document.querySelector('#nav-Menu');
+let closeMenu = document.getElementById('iconClose'); 
 
-abrir.addEventListener('click', () => {
-    nav_Menu.style.display = 'block';
-    nav_Menu.style.animation = 'abrirMenu 1s 1';
-})
+nav_Menu.classList.add('disable');
 
-let displayMenu = () => {
-    nav_Menu.style.display = 'none';
+openMenu.addEventListener('click', () => {
+    nav_Menu.classList.add('enable');
+    nav_Menu.classList.remove('disable');
+    nav_Menu.style.animation = 'openAnimate 1s 1';
+});
+
+let disableMenu = () => {
+    nav_Menu.classList.remove('enable');
+    nav_Menu.classList.add('disable');
 };
 
-fechar.addEventListener('click', () => {
-    nav_Menu.style.animation = 'fecharMenu 1s 1';
-    setTimeout(displayMenu, 500);
+closeMenu.addEventListener('click', () => {
+    nav_Menu.style.animation = 'closeAnimate 1s 1';
+    setTimeout(disableMenu, 500);
 });
