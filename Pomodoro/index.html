@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pomodoro</h1>
+        <h2 id="timer"><span id="timerFake">25:00</span></h2>
+        <div class="intervalTimer">
+            <h1>Período de descanso:</h1>
+            <h2 id="restTimer"><span id="timerFake">5:00</span></h2>
+        </div>
+        <i class="fas fa-play" id="playBtn"></i>
+        <i class="fas fa-pause" id="pauseBtn"></i>
+        <i class="fas fa-undo" id="resetBtn"></i>
+    </div><!--container-->
+
+    <audio src="./sounds/Alarm Clock.mp3" id="alarm"></audio>
+
+    <div class="musics container">
+        <h2>Musics</h2>
+        <audio src="./sounds/Lens - Bobby Richards.mp3" id="music1" controls></audio>
+        <audio src="./sounds/Lights - Patrick Patrikios.mp3" id="music2" controls></audio>
+        <audio src="./sounds/Two Moons - Bobby Richards.mp3" id="music3" controls></audio>
+    </div><!--musics-->
+    
+    <script src="./main.js"></script>
+</body>
+</html>
