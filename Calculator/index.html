@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section class="container">
+        <h1>Calculator</h1>
+
+        <form>
+            <input id="viewer" type="text"/>
+        </form>
+    
+        <section class="btns">
+            <button onclick="insert(0)">0</button>
+            <button onclick="insert(1)">1</button>
+            <button class="operators" onclick="insert('*')">X</button>
+            <button onclick="insert(3)">3</button>
+            <button onclick="insert(4)">4</button>
+            <button class="operators" onclick="insert('/')">/</button>
+            <button onclick="insert(6)">6</button>
+            <button onclick="insert(7)">7</button>
+            <button class="operators" onclick="insert('+')">+</button>
+            <button onclick="insert(9)">9</button>
+            <button onclick="insert(8)">8</button>
+            <button class="operators" onclick="insert('-')">-</button>
+            <button onclick="insert(5)">5</button>
+            <button onclick="insert(2)">2</button>
+            <button class="equal" onclick="equal()">=</button>
+            <div class="calcTools">
+            <button onclick="clean()">C</button>
+            <button onclick="back()"><</button>
+            </div>
+            <div class="clear"></div>
+        </section><!--btns-->
+    </section><!--container-->
+
+    <script src="./main.js"></script>
+</body>
+</html>
